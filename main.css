@@ -1,0 +1,143 @@
+@font-face {
+  font-family: MontW05;
+  font-weight: normal;
+  src: url("./fonts/MontW05-regular.woff2");
+}
+
+@font-face {
+  font-family: MontW05;
+  font-weight: bold;
+  src: url("./fonts/MontW05-bold.woff2");
+}
+
+body {
+  /* background-color: yellow; */
+}
+
+.AppHeader {
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+* {
+  font-family: MontW05;
+}
+
+.AppContainer {
+  margin: auto;
+  width: 100%;
+  border: 1px solid purple;
+  max-width: 1560px;
+}
+
+.AppLogo {
+  font-weight: bold;
+  padding: 25px;
+  margin: 0px;
+
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+}
+
+.AppHamburger {
+  padding: 25px;
+  padding-left: 0px;
+}
+
+.AppHeaderInner {
+  display: flex;
+}
+
+.AppHeaderNavBox {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+}
+
+.AppHeaderNav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 25px;
+}
+
+.AppHeaderFarRight {
+  width: 70px;
+  height: 50px;
+  background: rgba(17, 17, 17, 0.05);
+  border-radius: 10px;
+}
+
+.AppIntro {
+  padding: 7rem 0px;
+}
+
+.AppIntro p {
+  color: #111;
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.AppIntro h1 {
+  font-size: 88px;
+  margin-top: 0px;
+  max-width: 1258px;
+  margin-bottom: 40px;
+}
+
+.AppIntro button {
+  color: white;
+  background: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 12px 20px;
+}
+
+.ColSize-1 {
+}
+
+.Grid,
+.GridLiner {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 300vh;
+  position: relative;
+  grid-gap: 15px;
+}
+
+.GridLiner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.GridLinerItem {
+  height: 100%;
+  background: blue;
+  opacity: 0.3;
+}
+
+.GridPlayer {
+  background: red;
+  opacity: 0.3;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.GPWide1 {
+  height: 300px;
+}
+
+.GPWide3 {
+  height: 600px;
+  grid-column-end: span 3;
+}
+
+.GPHeight2 {
+  height: 480px;
+  border-radius: 110px;
+}
