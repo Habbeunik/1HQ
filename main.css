@@ -25,7 +25,7 @@ body {
 .AppContainer {
   margin: auto;
   width: 100%;
-  border: 1px solid purple;
+  /* border: 1px solid purple; */
   max-width: 1560px;
 }
 
@@ -140,4 +140,74 @@ body {
 .GPHeight2 {
   height: 480px;
   border-radius: 110px;
+}
+.news {
+  background: white;
+  margin-bottom: 80px;
+}
+
+.newsTop {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid #ccc;
+}
+
+.smallGreyCircle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(17, 17, 17, 0.05);
+}
+
+.newsCategory {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ccc;
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.newsImage {
+  height: 230px;
+  background: #dad6d6;
+}
+
+.newsSubHeader {
+  font-size: 13px;
+  color: #111;
+  opacity: 0.5;
+  margin: 10px 0px;
+}
+
+.newsTitle {
+  font-size: 17px;
+  color: #111;
+  margin: 0px;
+}
+
+.newsImageLandscape {
+  height: 400px;
+}
+
+.news3Column {
+  grid-column-end: span 3;
+}
+
+.newsImageOval {
+  height: 383px;
+  border-radius: 140px;
+  margin-bottom: 10px;
+}
+
+.newsSummary {
+  margin: 0px;
+  font-size: 13px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.newsImageSmall {
+  height: 135px;
+  margin-bottom: 10px;
 }
