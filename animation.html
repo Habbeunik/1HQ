@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./normalize.css" type="text/css" />
+    <title>1HQ Website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <style>
+    body {
+      height: 500vh;
+    }
+
+    .main {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px;
+    }
+
+    .box1 {
+      width: 700px;
+      height: 500px;
+      background-color: black;
+      border-radius: 15px;
+    }
+
+    .box2 {
+      position: absolute;
+      width: 300px;
+      height: 500px;
+      border-radius: 15px;
+      background-color: #8e8e8e;
+      top: 163px;
+      border: 6px solid #d5d5d1;
+      transition: all 500ms ease-out;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="box1"></div>
+      <div class="box2"></div>
+    </div>
+    <script>
+      const box2Node = document.querySelector(".box2");
+      box2Node.style.left = "28%";
+      let prevScrollY = window.scrollY;
+
+      const handlePageScroll = (e) => {
+        const currentBox2LeftValue = Number(box2Node.style.left.split("%")[0]);
+        const isScrollingDown = prevScrollY < window.scrollY;
+
+        prevScrollY = window.scrollY;
+
+        if (window.scrollY < 150) {
+          if (isScrollingDown) {
+            box2Node.style.left = `${currentBox2LeftValue - 0.5}%`;
+          } else {
+            box2Node.style.left = `${currentBox2LeftValue + 0.5}%`;
+          }
+        }
+      };
+
+      document.addEventListener("scroll", handlePageScroll);
+    </script>
+  </body>
+</html>
